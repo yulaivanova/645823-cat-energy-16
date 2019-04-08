@@ -4,223 +4,224 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat energy">
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat energy">
     </a>
-    <a class="page-header__title">
-      <img class="page-header__title-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat energy">
+    <a class="header__title">
+      <img class="header__title-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat energy">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-          </li>
-        </ul>
-      </div>
+    <nav class="site-nav">
+      <button class="site-nav__toggle" type="button">Открыть меню</button>
+      <ul class="site-nav__list">
+        <li class="site-nav__item">Главная</li>
+        <li class="site-nav__item site-nav__item--active">Каталог</li>
+        <li class="site-nav__item">Подбор программы</li>
+      </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <section class="catalog">
-      <div class="catalog__wrapper">
-        <h2 class="catalog__title">Каталог продукции</h2>
-        <div class="catalog__list">
-          <article class="catalog__item item">
-            <div class="product">
-              <div class="product__image">
-                <img class="product__photo-image" src="img/product.svg" width="30" height="30" alt="Product">
-              </div>
-              <div class="product__description">
-                <h3 class="product__title">Cat Energy PRO 500 г</h3>
-                <table class="product__info">
-                  <tr>
-                    <td>Объем</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Курица</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700 Р</td>
-                  </tr>
-                </table>
-              </div>
+      <h2 class="catalog__title">Каталог продукции</h2>
+      <div class="catalog__list">
+        <article class="catalog__item">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/product.svg" width="30" height="30" alt="product">
             </div>
-            <a class="catalog__order order-button">Заказать</a>
-          </article>
-
-          <article class="catalog__item item">
-            <div class="product">
-              <div class="product__image">
-                <img class="product__photo-image" src="img/product.svg" width="30" height="30" alt="Product">
-              </div>
-              <div class="product__description">
-                <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-                <table class="product__info">
-                  <tr>
-                    <td>Объем</td>
-                    <td>1000 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Курица</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>1000 Р</td>
-                  </tr>
-                </table>
-              </div>
+            <div class="product-card__description">
+              <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+              <table class="product-card__info info-table info-table">
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Объем</td>
+                  <td class="info-table__cell">500 г</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Вкус</td>
+                  <td class="info-table__cell">Курица</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Цена</td>
+                  <td class="info-table__cell">700 P.</td>
+                </tr>
+              </table>
             </div>
-            <a class="catalog__order order-button">Заказать</a>
-          </article>
-
-          <article class="catalog__item item">
-            <div class="product">
-              <div class="product__image">
-                <img class="product__photo-image" src="img/product.svg" width="30" height="30" alt="Product">
-              </div>
-              <div class="product__description">
-                <h3 class="product__title">Cat Energy PRO 500 г</h3>
-                <table class="product__info">
-                  <tr>
-                    <td>Объем</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Рыба</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700 Р</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <a class="catalog__order order-button">Заказать</a>
-          </article>
-
-          <article class="catalog__item item">
-            <div class="product">
-              <div class="product__image">
-                <img class="product__photo-image" src="img/product.svg" width="30" height="30" alt="Product">
-              </div>
-              <div class="product__description">
-                <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-                <table class="product__info">
-                  <tr>
-                    <td>Объем</td>
-                    <td>1000 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Рыба</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>1000 Р</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <a class="catalog__order order-button">Заказать</a>
-          </article>
-
-          <article class="catalog__item item">
-            <div class="product">
-              <div class="product__image">
-                <img class="product__photo-image" src="img/product.svg" width="30" height="30" alt="Product">
-              </div>
-              <div class="product__description">
-                <h3 class="product__title">Cat Energy SLIM 500 г</h3>
-                <table class="product__info">
-                  <tr>
-                    <td>Объем</td>
-                    <td>500 г.</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Гречка</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>400 Р</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <a class="catalog__order order-button">Заказать</a>
-          </article>
-
-          <article class="catalog__item item">
-            <div class="product">
-              <div class="product__image">
-                <img class="product__photo-image" src="img/product.svg" width="30" height="30" alt="Product">
-              </div>
-              <div class="product__description">
-                <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
-                <table class="product__info">
-                  <tr>
-                    <td>Объем</td>
-                    <td>1000 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Гречка</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700 Р</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <a class="catalog__order order-button">Заказать</a>
-          </article>
-
-          <article class="catalog__item item">
-            <div class="product">
-              <div class="product__image">
-                <img class="product__photo-image" src="img/product.svg" width="30" height="30" alt="Product">
-              </div>
-              <div class="product__description">
-                <h3 class="product__title">Cat Energy SLIM 500 г</h3>
-                <table class="product__info">
-                  <tr>
-                    <td>Объем</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Рис</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>500 Р</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <a class="catalog__order order-button">Заказать</a>
-          </article>
-          <div class="catalog__item show-more">
-            <h3 class="show-more__title">Показать еще 100500 товаров</h3>
-            <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-            <a class="show-more__show-button order-button" href="#">Показать все</a>
+            <a class="product-card__btn button--order">Заказать</a>
           </div>
+        </article>
+
+        <article class="catalog__item">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/product.svg" width="30" height="30" alt="product">
+            </div>
+            <div class="product-card__description">
+              <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+              <table class="product-card__info info-table">
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Объем</td>
+                  <td class="info-table__cell">1000 г</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Вкус</td>
+                  <td class="info-table__cell">Курица</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Цена</td>
+                  <td class="info-table__cell">1000 P.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="product-card__btn button--order">Заказать</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/product.svg" width="30" height="30" alt="product">
+            </div>
+            <div class="product-card__description">
+              <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+              <table class="product-card__info info-table">
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Объем</td>
+                  <td class="info-table__cell">500 г</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Вкус</td>
+                  <td class="info-table__cell">Рыба</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Цена</td>
+                  <td class="info-table__cell">700 P.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="product-card__btn button--order">Заказать</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/product.svg" width="30" height="30" alt="product">
+            </div>
+            <div class="product-card__description">
+              <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+              <table class="product-card__info info-table">
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Объем</td>
+                  <td class="info-table__cell">1000 г</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Вкус</td>
+                  <td class="info-table__cell">Рыба</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Цена</td>
+                  <td class="info-table__cell">1000 P.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="product-card__btn button--order">Заказать</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/product.svg" width="30" height="30" alt="product">
+            </div>
+            <div class="product-card__description">
+              <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
+              <table class="product-card__info info-table">
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Объем</td>
+                  <td class="info-table__cell">500 г.</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Вкус</td>
+                  <td class="info-table__cell">Гречка</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Цена</td>
+                  <td class="info-table__cell">400 P.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="product-card__btn button--order">Заказать</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/product.svg" width="30" height="30" alt="product">
+            </div>
+            <div class="product-card__description">
+              <h3 class="product-card__title">Cat Energy SLIM 1000 г</h3>
+              <table class="product-card__info info-table">
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Объем</td>
+                  <td class="info-table__cell">1000 г</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Вкус</td>
+                  <td class="info-table__cell">Гречка</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Цена</td>
+                  <td class="info-table__cell">700 P.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="product-card__btn button--order">Заказать</a>
+          </div>
+
+        </article>
+
+        <article class="catalog__item">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/product.svg" width="30" height="30" alt="product">
+            </div>
+            <div class="product-card__description">
+              <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
+              <table class="product-card__info info-table">
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Объем</td>
+                  <td class="info-table__cell">500 г</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Вкус</td>
+                  <td class="info-table__cell">Рис</td>
+                </tr>
+                <tr class="info-table__row">
+                  <td class="info-table__cell">Цена</td>
+                  <td class="info-table__cell">500 P.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="product-card__btn button--order">Заказать</a>
+          </div>
+        </article>
+
+        <div class="catalog__item card-more">
+          <h3 class="card-more__title">Показать еще 100500 товаров</h3>
+          <p class="card-more__text">На самом деле вкусов гораздо больше!</p>
+          <a class="card-more__button button--card-more" href="#">Показать все</a>
         </div>
       </div>
     </section>
   </main>
 
+<<<<<<< Updated upstream
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a href="#" class="page-footer__logo">
@@ -250,4 +251,34 @@
     </div>
   </footer>
 </body>
+=======
+  <footer class="footer">
+    <a href="#" class="footer__logo">
+      <img class="footer__logo-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat energy">
+    </a>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+            Фейсбуке</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a href="#" class="copyright__logo">
+        <img class="copyright__logo-image" src="img/logo_academy.svg" width="30" height="30" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+>>>>>>> Stashed changes
 </html>
