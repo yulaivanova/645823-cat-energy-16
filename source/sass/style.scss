@@ -1,8 +1,20 @@
-@import "blocks/scaffolding.scss", "blocks/header.scss", "blocks/promo-block.scss", "blocks/programs.scss",
-"blocks/visually-hidden.scss", "blocks/advantages.scss", "blocks/footer.scss", "blocks/social.scss", "blocks/copyright.scss",
- "blocks/product-card.scss", "blocks/catalog.scss", "blocks/card-more.scss", "blocks/button.scss",
- "blocks/site-nav.scss", "blocks/programs-card.scss", "blocks/info-table.scss";
-
-
-
-
+@import "blocks/colors.scss",
+  "blocks/mixin.scss",
+  "blocks/fonts.scss",
+  "blocks/scaffolding.scss",
+  "blocks/button.scss",
+  "blocks/header.scss",
+  "blocks/site-nav.scss",
+  "blocks/main.scss",
+  "blocks/promo-block.scss",
+  "blocks/programs.scss",
+  "blocks/programs-card.scss",
+  "blocks/visually-hidden.scss",
+  "blocks/advantages.scss",
+  "blocks/footer.scss",
+  "blocks/social.scss",
+  "blocks/copyright.scss",
+  "blocks/catalog.scss",
+  "blocks/product-card.scss",
+  "blocks/info-table.scss",
+  "blocks/card-more.scss";

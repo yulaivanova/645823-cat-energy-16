@@ -1,18 +1,16 @@
 .promo-block {
-  background-color: #63a73a;
-  color: #ffffff;
+  background-color: $green;
+  color: $white;
 
-  padding-top: 25px;
-  margin-bottom: 20px;
-};
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .promo-block__title {
- font-size: 36px;
-};
+  font-size: 36px;
+  margin: 0;
+}
 
 .promo-block__slogan {
   text-transform: uppercase;
-};
-
-.promo-block__btn {
-  text-decoration: none;
-};
+}
