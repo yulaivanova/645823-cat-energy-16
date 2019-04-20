@@ -1,7 +1,16 @@
 .site-nav__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-nav__link {
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

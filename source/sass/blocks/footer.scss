@@ -10,3 +10,10 @@
   border-top: 1px solid #cdcdcd;
   padding: 20px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
