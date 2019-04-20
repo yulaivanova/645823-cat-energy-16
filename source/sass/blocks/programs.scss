@@ -7,3 +7,9 @@
 .programs__item {
   margin-bottom: 20px;
 }
+
+@media (min-width: $desktop-width) {
+  .programs {
+    display: flex;
+  }
+}

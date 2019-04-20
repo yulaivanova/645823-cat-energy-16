@@ -1,7 +1,10 @@
 body {
-  font-family: "Oswald", Arial, sans-serif;;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   color: $black;
   line-height: 18px;
   font-weight: 400;
 }
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
