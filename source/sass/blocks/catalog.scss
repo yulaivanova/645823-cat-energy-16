@@ -1,3 +1,8 @@
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog__title {
   font-size: 36px;
   border-bottom: 1px solid #cdcdcd;
@@ -7,4 +12,17 @@
 .catalog__item {
   border-bottom: 1px solid #cdcdcd;
   padding: 0 20px 25px 20px;
+}
+
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
