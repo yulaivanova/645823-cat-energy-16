@@ -1,4 +1,7 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+
   background-color: #f2f2f2;
 
   padding-left: 20px;
@@ -12,7 +15,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer__container {
     display: flex;
     justify-content: space-between;
   }
