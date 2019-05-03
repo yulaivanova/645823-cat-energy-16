@@ -1,0 +1,48 @@
+.form__pet {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__iner-owner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__iner-checkbox {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.form__checkbox {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.form__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}

@@ -1,0 +1,15 @@
+.add-products__item {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.add-products__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

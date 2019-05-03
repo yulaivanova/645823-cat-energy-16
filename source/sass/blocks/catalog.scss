@@ -1,3 +1,18 @@
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .catalog__title {
   font-size: 36px;
   border-bottom: 1px solid #cdcdcd;
@@ -7,4 +22,26 @@
 .catalog__item {
   border-bottom: 1px solid #cdcdcd;
   padding: 0 20px 25px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
