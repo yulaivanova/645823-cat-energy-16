@@ -1,3 +1,29 @@
 .info-table__row {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 12px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+}
+
+.info-table__cell {
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.info-table__cell:nth-child(even) {
+  text-align: right;
+}
+
+.info-table {
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+    border-spacing: 0;
+  }
 }

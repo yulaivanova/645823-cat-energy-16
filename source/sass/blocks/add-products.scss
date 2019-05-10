@@ -1,5 +1,14 @@
+
+.add-products {
+  padding: 0 20px;
+
+  margin-bottom: 15px;
+}
+
 .add-products__item {
-  width: 100%;
+  @media (min-width: $tablet-width) {
+
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -11,5 +20,116 @@
 .add-products__inner {
   @media (min-width: $desktop-width) {
     display: flex;
+  }
+}
+
+.add-products__title {
+  // position: relative;
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    margin-bottom: 70px;
+
+  }
+  @media (min-width: $desktop-width){
+    padding-left: 70px;
+  }
+}
+
+// .add-products__title::before {
+//   content: "";
+//   height: 3px;
+//   position: absolute;
+//   background-color: $green;
+//   width: 100vh;
+//   top: 50%;
+//   left: 250px;
+
+//   @media (min-width: $tablet-width) {
+//     left: 310px;
+//   }
+// }
+
+// .add-products__title::after {
+//   @media (min-width: $tablet-width) {
+//     content: "";
+//     height: 3px;
+//     position: absolute;
+//     background-color: $green;
+//     width: 100vh;
+//     top: 50%;
+//     right: 1160px;
+//   }
+// }
+
+
+.add-products__list {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width){
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width){
+    width: 75%;
+    padding-left: 70px;
+    padding-right: 40px;
+  }
+}
+.add-products__offer {
+  background-image: url("/../img/gift-photo-mobile@1x.jpg");
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width){
+    background-image: url("/../img/gift-photo-tablet@1x.jpg");
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 65px 110px 75px 91px;
+  }
+
+  @media (min-width: $desktop-width){
+    flex-direction: column;
+    background-image: url("/../img/gift-photo-desktop@1x.jpg");
+    box-sizing: border-box;
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    height: 289px;
+  }
+}
+
+.add-products__gift-icon {
+  fill: $white;
+}
+
+.add-products__offer-text {
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+  margin-top: 60px;
+  padding: 0 55px;
+
+  @media (min-width: $tablet-width){
+  margin: 0;
+  padding: 0;
+  width: 175px;
+  text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
