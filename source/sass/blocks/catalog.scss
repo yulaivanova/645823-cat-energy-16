@@ -41,16 +41,16 @@ margin: 0;
 border-bottom: 1px solid $gray;
 box-sizing: border-box;
 
+
 @media (min-width: $tablet-width) {
-  width: 45%;
-  margin-top: 110px;
+  width: calc(50% - 30px);
   margin-bottom: 30px;
-  height: 432px;
+  min-height: 432px;
   }
 
-@media (min-width: 1300px) {
-  width: 23%;
-}
+@media (min-width: $desktop-width) {
+  width: calc(25% - 40px);
+  }
 }
 
 @media (min-width: $tablet-width) {

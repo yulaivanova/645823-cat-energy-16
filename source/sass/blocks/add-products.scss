@@ -20,46 +20,46 @@
 .add-products__inner {
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
 .add-products__title {
-  // position: relative;
+  position: relative;
   @media (min-width: $tablet-width) {
-    padding-left: 20px;
     margin-bottom: 70px;
 
   }
   @media (min-width: $desktop-width){
-    padding-left: 70px;
+    padding-left: 50px;
   }
 }
 
-// .add-products__title::before {
-//   content: "";
-//   height: 3px;
-//   position: absolute;
-//   background-color: $green;
-//   width: 100vh;
-//   top: 50%;
-//   left: 250px;
+.add-products__title span {
+  background: $white;
+  z-index: 1;
+  padding-right: 20px;
 
-//   @media (min-width: $tablet-width) {
-//     left: 310px;
-//   }
-// }
+  @media (min-width: $tablet-width){
+    padding-left: 40px;
+  }
+}
 
-// .add-products__title::after {
-//   @media (min-width: $tablet-width) {
-//     content: "";
-//     height: 3px;
-//     position: absolute;
-//     background-color: $green;
-//     width: 100vh;
-//     top: 50%;
-//     right: 1160px;
-//   }
-// }
+.add-products__title::before {
+  content: "";
+  height: 3px;
+  position: absolute;
+  background-color: $green;
+  width: calc(100% + 40px);
+  top: 50%;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    left: -20px;
+  }
+}
+
 
 
 .add-products__list {
@@ -70,9 +70,9 @@
   }
 
   @media (min-width: $desktop-width){
-    width: 75%;
-    padding-left: 70px;
-    padding-right: 40px;
+    width: calc(100% - 40px);
+    margin-right: 40px;
+
   }
 }
 .add-products__offer {
@@ -100,7 +100,8 @@
     flex-direction: column;
     background-image: url("/../img/gift-photo-desktop@1x.jpg");
     box-sizing: border-box;
-    max-width: 25%;
+    width: 245px;
+    margin-left: 40px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;

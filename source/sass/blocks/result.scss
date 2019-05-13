@@ -1,8 +1,75 @@
 .result {
   display: flex;
-  flex-direction: column;
+
+}
+
+.result__list {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.result__item {
+  width: 124px;
+  margin-bottom: 23px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  padding: 15px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    width: 162px;
+    padding: 20px;
+  }
+}
+
+.result__item--cost {
+  margin-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+}
+
+.result__value {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.result__info {
+  font-family: "Arial",sans-serif;
+  position: absolute;
+  width: 60px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+
+  background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+    bottom: -5px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray;
   }
 }
