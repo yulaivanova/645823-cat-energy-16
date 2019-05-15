@@ -1,0 +1,32 @@
+.radio__label {
+  text-transform: uppercase;
+  font-size: 16px;
+  position: relative;
+  display: block;
+  user-select: none;
+  cursor: pointer;
+}
+
+.radio__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -45px;
+  top: -5px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid $gray;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, $green 6px, $white 0);
+  left: -45px;
+  top: -5px;
+}

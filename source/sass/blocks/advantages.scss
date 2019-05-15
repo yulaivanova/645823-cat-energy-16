@@ -1,5 +1,6 @@
 .advantages {
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
@@ -63,19 +64,19 @@
 }
 
 .advantages__item--benefit::before {
-  background-image: url(../../img/advantage-leaf@1x.png);
+  background-image: url("../../img/advantage-leaf@1x.png");
 }
 
 .advantages__item--usability::before {
-  background-image: url(../../img/advantage-powder@1x.png);
+  background-image: url("../../img/advantage-powder@1x.png");
 }
 
 .advantages__item--economy::before {
-  background-image: url(../../img/advantage-dining@1x.png);
+  background-image: url("../../img/advantage-dining@1x.png");
 }
 
 .advantages__item--result::before {
-  background-image: url(../../img/advantage-clock@1x.png);
+  background-image: url("../../img/advantage-clock@1x.png");
 }
 
 .advantages__item::after {

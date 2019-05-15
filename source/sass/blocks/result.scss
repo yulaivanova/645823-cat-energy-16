@@ -1,12 +1,12 @@
 .result {
   display: flex;
-
 }
 
 .result__list {
   display: flex;
   align-items: center;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -34,7 +34,6 @@
   @media (min-width: $tablet-width) {
     margin-left: 40px;
   }
-
 }
 
 .result__value {
@@ -49,7 +48,7 @@
 }
 
 .result__info {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   position: absolute;
   width: 60px;
   margin: 0 auto;

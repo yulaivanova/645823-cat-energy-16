@@ -1,11 +1,11 @@
 .info-table__row {
   font-size: 12px;
   line-height: 12px;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
   }
-
 }
 
 .info-table__cell {
@@ -22,6 +22,7 @@
 
 .info-table {
   width: 100%;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 35px;
     border-spacing: 0;

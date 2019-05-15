@@ -59,6 +59,7 @@
     line-height: 20px;
     width: 200px;
   }
+
   @media (min-width: $desktop-width) {
     text-align: left;
     margin-right: 20px;
@@ -75,17 +76,17 @@
 .contacts__map {
   position: relative;
   min-height: 362px;
-  background-image: url(../../img/bg-map-mobile@1x.png);
+  background-image: url("../../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/bg-map-tablet@1x.png);
+    background-image: url("../../img/bg-map-tablet@1x.png");
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url(../../img/bg-map-desktop@1x.png);
+    background-image: url("../../img/bg-map-desktop@1x.png");
   }
 }
 
@@ -97,7 +98,7 @@
   position: absolute;
   top: 180px;
   left: 125px;
-  background-image: url(../../img/map-pin.png);
+  background-image: url("../../img/map-pin.png");
   background-size: 60px;
   background-repeat: no-repeat;
 

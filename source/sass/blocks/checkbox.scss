@@ -1,0 +1,34 @@
+.checkbox__label {
+  text-transform: uppercase;
+  font-size: 16px;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  display: block;
+}
+
+.checkbox__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -45px;
+  top: -5px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid $gray;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -45px;
+  top: -5px;
+  border: 1px solid $gray;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+}

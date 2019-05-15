@@ -1,6 +1,6 @@
 .example {
   background-color: $gray;
-  padding: 30px 20px ;
+  padding: 30px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 30px 30px;
@@ -25,7 +25,6 @@
     padding-bottom: 70px;
     padding-left: 110px;
   }
-
 }
 
 .example__description {
@@ -41,7 +40,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     width: 440px;
-
   }
 }
 
@@ -54,7 +52,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-
   }
 }
 
@@ -63,7 +60,6 @@
     display: flex;
     flex-direction: row;
   }
-
 }
 
 .example__result {
@@ -103,8 +99,5 @@
     & span {
       padding-right: 50px;
     }
-
   }
 }
-
-
