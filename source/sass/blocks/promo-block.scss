@@ -1,16 +1,121 @@
 .promo-block {
-  background-color: $green;
+  position: relative;
+
   color: $white;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+    min-height: 860px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 697px;
+    padding-left: 70px;
+    padding-bottom: 0;
+  }
 }
+
+.promo-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  min-height: 306px;
+  width: 100%;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-color: $green;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 720px;
+    min-height: 696px;
+    top: -108px;
+    right: 0;
+    left: inherit;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-color: $green;
+    background-position: 0;
+    background-size: cover;
+    bckground-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+
 
 .promo-block__title {
   font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 400;
   margin: 0;
+  padding: 20px 30px 20px 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 0;
+    text-align: left;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
+  }
 }
 
 .promo-block__slogan {
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0;
+    text-align: left;
+    color: $black;
+    margin-bottom: 45px;
+  }
+}
+
+.promo-block__product {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    right: 325px;
+    bottom: 180px;
+  }
+}
+
+.promo-block__btn {
+  width: 100%;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
 }

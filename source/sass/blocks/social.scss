@@ -1,3 +1,44 @@
 .social__list {
   @include list-reset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  padding: 20px 0;
+}
+
+.social__item {
+  margin: 0 16px;
+}
+
+.social__icon {
+  fill: $dark-gray;
+
+  &:hover {
+    fill: $green;
+  }
+}
+
+.social__icon-vk {
+  @media (min-width: $tablet-width) {
+    width: 31px;
+    height: 19px;
+  }
+}
+
+.social__icon-insta {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__icon-fb {
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
 }

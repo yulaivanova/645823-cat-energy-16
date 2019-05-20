@@ -1,4 +1,5 @@
-@import "blocks/colors.scss",
+@import "normalize",
+  "blocks/colors.scss",
   "blocks/mixin.scss",
   "blocks/fonts.scss",
   "blocks/scaffolding.scss",
@@ -25,4 +26,8 @@
   "blocks/add-products.scss",
   "blocks/add-card.scss",
   "blocks/wrapper.scss",
-  "blocks/form.scss";
+  "blocks/form.scss",
+  "blocks/field.scss",
+  "blocks/radio.scss",
+  "blocks/textarea.scss",
+  "blocks/checkbox.scss";
