@@ -22,3 +22,16 @@
     padding-right: 110px;
   }
 }
+
+.header__logo img{
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 200px;
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 220px;
+    height: 80px;
+  }
+}

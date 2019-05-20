@@ -96,14 +96,19 @@
     </symbol>
 
     <symbol id="phone-icon" viewBox="0 0 20 20">
-      <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zm-9.8 10v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8h3.9v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9v13.9c-.1 1.7 1.2 3.1 2.9 3.1h4.6c.3.1.6-.2.6-.5z" />
+      <path
+        d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zm-9.8 10v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8h3.9v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9v13.9c-.1 1.7 1.2 3.1 2.9 3.1h4.6c.3.1.6-.2.6-.5z" />
     </symbol>
   </svg>
   <div class="wrapper">
     <div class="header__wrapper">
       <header class="header">
         <a class="header__logo">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="200" height="65" alt="Cat energy logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="220" height="80">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="200" height="75">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="200px" height="59px" alt="Cat energy logo">
+          </picture>
         </a>
         <nav class="site-nav site-nav--opened site-nav--nojs">
           <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -222,6 +227,9 @@
         </div>
         <div class="contacts__map map">
           <span class="visually-hidden">Карта</span>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1900820e4e69f30fb71e92bf34a67f52c6d1bcf1896ef23c9bca80e4a14f4d75&amp;source=constructor"
+            width="100%" height="360" frameborder="0"></iframe>
         </div>
       </section>
       <div class="footer__container">
