@@ -30,6 +30,10 @@
   background-size: cover;
   z-index: -1;
 
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -47,6 +51,10 @@
     background-size: cover;
     bckground-repeat: no-repeat;
     z-index: 1;
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -90,18 +98,21 @@
 .promo-block__product {
   display: block;
   margin: 0 auto;
+  width: 280px;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-
     bottom: 0;
+    width: 700px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
     right: 325px;
     bottom: 180px;
+    width: 552px;
   }
 }
 
