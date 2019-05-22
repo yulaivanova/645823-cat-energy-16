@@ -123,6 +123,11 @@
         <h1 class="promo-block__title">Функциональное питание для котов</h1>
         <p class="promo-block__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 769px)"
+            srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
           <source type="image/png" media="(min-width: 1200px)"
             srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source type="image/jpg" media="(min-width: 769px)"
@@ -204,71 +209,109 @@
               <p class="example__cost"><span>Затраты на питание:</span><span>15 000 руб.</span></p>
             </div>
           </div>
-          <div class="example__comparison comparison">
-            <div class="comparison__image"></div>
-            <div class="comparison__range"></div>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <section class="footer__contacts contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
-        </div>
-        <div class="contacts__map map">
-          <span class="visually-hidden">Карта</span>
-          <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1900820e4e69f30fb71e92bf34a67f52c6d1bcf1896ef23c9bca80e4a14f4d75&amp;width=100%&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
-          <script src="js/map.js" type="text/javascript"></script>
-        </div>
+          <div class="example__slider slider">
+            <h3 class="visually-hidden">Пример изменений вашего кота</h3>
+            <div class="slider__wrapper">
+              <picture class="slider__img-wrapper">
+                <source type="image/webp" srcset="img/before-desktop@1x.webp 1x,
+                          img/before-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="img/before-desktop@1x.png 1x,
+                          img/before-desktop@2x.png 2x" media="(min-width: 1200px)">
+                <source type="image/webp" srcset="img/before-tablet@1x.webp 1x,
+                          img/before-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="img/before-tablet@1x.png 1x,
+                          img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x,
+                          img/before-mobile@2x.webp 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" class="slider__img" width="320"
+                  height="240" alt="Кот до питания Cat Energy">
+              </picture>
+              <picture class="slider__img-wrapper">
+                <source type="image/webp" srcset="img/after-desktop@1x.webp 1x,
+                          img/after-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="img/after-desktop@1x.png 1x,
+                          img/after-desktop@2x.png 2x" media="(min-width: 1200px)">
+                <source type="image/webp" srcset="img/after-tablet@1x.webp 1x,
+                          img/after-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="img/after-tablet@1x.png 1x,
+                          img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x,
+                          img/after-mobile@2x.webp 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" class="slider__img" width="320"
+                  height="240" alt="Кот после питания Cat Energy">
+              </picture>
+            </div>
+            <div class="slider__range">
+              <button type="button" class="slider__range-btn slider__range-btn--before">Было</button>
+              <div class="slider__range-field">
+                <div class="slider__range-slider"></div>
+              </div>
+              <button type="button" class="slider__range-btn slider__range-btn--after">Стало</button>
+            </div>
+          </div>
       </section>
-      <div class="footer__container">
-        <a href="#" class="footer__logo">
-          <img class="footer__logo-image" src="img/logo-footer.svg" width="130" height="25" alt="Cat energy">
-        </a>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
-                  class="visually-hidden">Мы в Вконтакте</span>
-                <svg class="social__icon social__icon-vk" width="22" height="12">
-                  <use xlink:href="#vk-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                <span class="visually-hidden">Мы в Инстаграме</span>
-                <svg class="social__icon social__icon-insta" width="16" height="16">
-                  <use xlink:href="#insta-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__icon social__icon-fb" width="10" height="19">
-                  <use xlink:href="#fb-icon"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a href="#" class="copyright__logo">
-            <svg class="copyriht__icon" width="40" height="40">
-              <use xlink:href="#academy-icon"></use>
-            </svg>
-          </a>
-        </div>
+  </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer__contacts contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
-    </footer>
+      <div class="contacts__map" id="map">
+        <span class="visually-hidden">Карта</span>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e8de7724-4389-4305-9e95-dcaf82fd0420"
+          type="text/javascript"></script>
+      </div>
+    </section>
+    <div class="footer__container">
+      <a href="#" class="footer__logo">
+        <img class="footer__logo-image" src="img/logo-footer.svg" width="130" height="25" alt="Cat energy">
+      </a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
+                class="visually-hidden">Мы в Вконтакте</span>
+              <svg class="social__icon social__icon-vk" width="22" height="12">
+                <use xlink:href="#vk-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+              <svg class="social__icon social__icon-insta" width="16" height="16">
+                <use xlink:href="#insta-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg class="social__icon social__icon-fb" width="10" height="19">
+                <use xlink:href="#fb-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a href="#" class="copyright__logo">
+          <svg class="copyriht__icon" width="40" height="40">
+            <use xlink:href="#academy-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
   </div>
   <script src="js/menu.js"></script>
+  <script src="js/map.js" type="text/javascript"></script>
 </body>
 
 

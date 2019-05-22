@@ -16,8 +16,12 @@
 
   width: 30px;
   height: 30px;
-  border: 1px solid $gray;
+  border: 1px solid $gray-border;
   border-radius: 50%;
+
+  &:hover {
+    border: 1px solid $dark-gray;
+  }
 }
 
 .radio__input:checked + .radio__label::before {

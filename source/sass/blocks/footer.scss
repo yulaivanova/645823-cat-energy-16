@@ -25,6 +25,14 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .footer__container {
