@@ -30,8 +30,16 @@
   background-size: cover;
   z-index: -1;
 
+  &.webp {
+    background-image: url("../img/index-background-mobile@1x.webp");
+  }
+
   @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
     background-image: url("../../img/index-background-mobile@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/index-background-mobile@2x.webp")
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -52,8 +60,16 @@
     bckground-repeat: no-repeat;
     z-index: 1;
 
+    &.webp {
+      background-image: url("../img/index-background-desktop@1x.webp")
+    }
+
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
       background-image: url("../../img/index-background-desktop@2x.jpg");
+
+      &.webp {
+        background-image: url("../img/index-background-desktop@2x.webp")
+      }
     }
   }
 }
