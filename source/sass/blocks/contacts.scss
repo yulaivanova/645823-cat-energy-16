@@ -85,14 +85,14 @@
   background-position: center;
 
   &.webp {
-    background-image: url("../img/bg-map-mobile@1x.webp")
+    background-image: url("../img/bg-map-mobile@1x.webp");
   }
 
   @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-image: url("../../img/bg-map-mobile@2x.png");
 
     &.webp {
-      background-image: url("../img/bg-map-mobile@2x.webp")
+      background-image: url("../img/bg-map-mobile@2x.webp");
     }
   }
 
@@ -100,14 +100,14 @@
     background-image: url("../../img/bg-map-tablet@1x.png");
 
     &.webp {
-      background-image: url("../img/bg-map-tablet@1x.webp")
+      background-image: url("../img/bg-map-tablet@1x.webp");
     }
 
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
       background-image: url("../../img/bg-map-tablet@2x.jpg");
 
       &.webp {
-        background-image: url("../img/bg-map-tablet@2x.webp")
+        background-image: url("../img/bg-map-tablet@2x.webp");
       }
     }
   }
@@ -116,14 +116,14 @@
     background-image: url("../../img/bg-map-desktop@1x.png");
 
     &.webp {
-      background-image: url("../img/bg-map-desktop@1x.webp")
+      background-image: url("../img/bg-map-desktop@1x.webp");
     }
 
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
       background-image: url("../../img/bg-map-desktop@2x.jpg");
 
       &.webp {
-        background-image: url("../img/bg-map-desktop@2x.webp")
+        background-image: url("../img/bg-map-desktop@2x.webp");
       }
     }
   }

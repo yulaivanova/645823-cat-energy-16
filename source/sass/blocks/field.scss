@@ -21,7 +21,7 @@
   &:active {
     border: 2px solid $black;
 
-    + .field__icon{
+    + .field__icon {
       fill: $green;
     }
   }
@@ -29,7 +29,7 @@
   &:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid $error-field;
 
-    + .field__icon{
+    + .field__icon {
       fill: $error-field;
     }
   }

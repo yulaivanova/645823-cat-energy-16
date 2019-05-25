@@ -6,7 +6,6 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -84,7 +83,7 @@
         <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
   c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
   C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-  C7.8,20,8.1,19.7,8.1,19.4z" <polygon="" class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 ">
+  C7.8,20,8.1,19.7,8.1,19.4z" polygon="" class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 ">
         </path>
       </symbol>
       <symbol id="icon-plus-mobile" viewbox="0 0 30 30">
@@ -235,34 +234,38 @@
           <div class="example__slider slider">
             <h3 class="visually-hidden">Пример изменений вашего кота</h3>
             <div class="slider__wrapper">
-              <picture class="slider__img-wrapper">
-                <source type="image/webp" srcset="img/before-desktop@1x.webp 1x,
+              <div class="slider__img-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/before-desktop@1x.webp 1x,
                           img/before-desktop@2x.webp 2x" media="(min-width: 1200px)">
-                <source srcset="img/before-desktop@1x.png 1x,
+                  <source srcset="img/before-desktop@1x.png 1x,
                           img/before-desktop@2x.png 2x" media="(min-width: 1200px)">
-                <source type="image/webp" srcset="img/before-tablet@1x.webp 1x,
+                  <source type="image/webp" srcset="img/before-tablet@1x.webp 1x,
                           img/before-tablet@2x.webp 2x" media="(min-width: 768px)">
-                <source srcset="img/before-tablet@1x.png 1x,
+                  <source srcset="img/before-tablet@1x.png 1x,
                           img/before-tablet@2x.png 2x" media="(min-width: 768px)">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x,
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x,
                           img/before-mobile@2x.webp 2x">
-                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" class="slider__img" width="320"
-                  height="240" alt="Кот до питания Cat Energy">
-              </picture>
-              <picture class="slider__img-wrapper">
-                <source type="image/webp" srcset="img/after-desktop@1x.webp 1x,
+                  <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" class="slider__img"
+                    width="320" height="240" alt="Кот до питания Cat Energy">
+                </picture>
+              </div>
+              <div class="slider__img-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/after-desktop@1x.webp 1x,
                           img/after-desktop@2x.webp 2x" media="(min-width: 1200px)">
-                <source srcset="img/after-desktop@1x.png 1x,
+                  <source srcset="img/after-desktop@1x.png 1x,
                           img/after-desktop@2x.png 2x" media="(min-width: 1200px)">
-                <source type="image/webp" srcset="img/after-tablet@1x.webp 1x,
+                  <source type="image/webp" srcset="img/after-tablet@1x.webp 1x,
                           img/after-tablet@2x.webp 2x" media="(min-width: 768px)">
-                <source srcset="img/after-tablet@1x.png 1x,
+                  <source srcset="img/after-tablet@1x.png 1x,
                           img/after-tablet@2x.png 2x" media="(min-width: 768px)">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x,
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x,
                           img/after-mobile@2x.webp 2x">
-                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" class="slider__img" width="320"
-                  height="240" alt="Кот после питания Cat Energy">
-              </picture>
+                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" class="slider__img" width="320"
+                    height="240" alt="Кот после питания Cat Energy">
+                </picture>
+              </div>
             </div>
             <div class="slider__range">
               <button type="button" class="slider__range-btn slider__range-btn--before">Было</button>
@@ -333,6 +336,7 @@
   </div>
   <script src="js/menu.js"></script>
   <script src="js/map.js" type="text/javascript"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 
