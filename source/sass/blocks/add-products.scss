@@ -83,11 +83,27 @@
   padding-top: 70px;
   padding-bottom: 50px;
 
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/gift-photo-mobile@2x.webp");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("/../img/gift-photo-tablet@1x.jpg");
     flex-direction: row;
     justify-content: space-between;
     padding: 65px 110px 75px 91px;
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+
+      &.webp {
+        background-image: url("../img/gift-photo-tablet@2x.webp");
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -100,6 +116,14 @@
     padding-right: 40px;
     padding-bottom: 40px;
     height: 289px;
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+
+      &.webp {
+        background-image: url("../img/gift-photo-desktop@2x.webp");
+      }
+    }
   }
 }
 

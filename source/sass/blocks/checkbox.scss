@@ -17,6 +17,10 @@
   width: 30px;
   height: 30px;
   border: 1px solid $gray;
+
+  &:hover {
+    border: 1px solid $dark-gray;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::before {
