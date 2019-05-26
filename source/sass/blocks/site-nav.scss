@@ -62,6 +62,10 @@
   }
 }
 
+.site-nav__link--active {
+  pointer-events: none;
+}
+
 .site-nav__link--active::after {
   @media (min-width: $tablet-width) {
     content: "";

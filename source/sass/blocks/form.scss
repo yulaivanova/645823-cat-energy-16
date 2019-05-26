@@ -311,4 +311,17 @@
     margin-left: 40px;
     margin-right: 40px;
   }
+
+  &:focus {
+    outline: 2px solid $black;
+  }
+
+  &:active {
+    border: 2px solid $black;
+  }
+
+  &:hover {
+    border: 1px solid $gray-hvr-input;
+  }
 }
+
