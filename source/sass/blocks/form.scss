@@ -12,6 +12,7 @@
   margin: 0;
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -42,7 +43,7 @@
   }
 }
 
-.form__iner-owner {
+.form__inner-owner {
   @media (min-width: $tablet-width) {
     padding: 0 40px;
   }
@@ -53,7 +54,7 @@
   }
 }
 
-.form__iner-checkbox {
+.form__inner-checkbox {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +111,12 @@
   }
 }
 
+.form__field:last-child {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .form__fieldset {
   border: 0;
   border-bottom: 1px solid $gray;
@@ -127,9 +134,14 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
-    margin-left: 35px;
+    padding: 0 62px;
+    margin-left: 28px;
+    margin-bottom: 35px;
   }
+}
+
+.form__radio:last-child {
+  margin-bottom: 20px;
 }
 
 .form__checkbox {
@@ -137,14 +149,16 @@
   margin-left: 45px;
 
   @media (min-width: $tablet-width) {
-    width: calc(50% - 45px);
+    width: calc(50% - 65px);
+    margin-bottom: 40px;
+    margin-left: 65px;
   }
 
   @media (min-width: $desktop-width) {
     width: calc(25% - 80px);
+    margin-bottom: 20px;
   }
 }
-
 
 .form__fieldset--program-type {
   margin-top: 20px;
@@ -180,7 +194,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -224,10 +238,11 @@
 
 .form__legend {
   font-size: 24px;
+  font-weight: 400;
   line-height: 24px;
   margin: 0;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .form__fieldset .form__span-width {
@@ -277,7 +292,7 @@
 .form__required-text {
   margin: 20px 0;
   text-align: center;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px;

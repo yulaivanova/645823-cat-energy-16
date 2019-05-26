@@ -104,7 +104,7 @@
     }
 
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-      background-image: url("../../img/bg-map-tablet@2x.jpg");
+      background-image: url("../../img/bg-map-tablet@2x.png");
 
       &.webp {
         background-image: url("../img/bg-map-tablet@2x.webp");
@@ -120,7 +120,7 @@
     }
 
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-      background-image: url("../../img/bg-map-desktop@2x.jpg");
+      background-image: url("../../img/bg-map-desktop@2x.png");
 
       &.webp {
         background-image: url("../img/bg-map-desktop@2x.webp");

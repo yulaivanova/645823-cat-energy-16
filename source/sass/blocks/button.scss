@@ -21,7 +21,16 @@
   font-size: 14px;
 }
 
-.button--card-more {
+.button--gray {
   background-color: $gray;
   color: $black;
+
+  &:hover {
+    background-color: $gray-hvr;
+  }
+
+  &:active {
+    background-color: $gray-hvr;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }

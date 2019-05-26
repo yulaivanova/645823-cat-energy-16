@@ -37,7 +37,10 @@
 .programs-card__description {
   line-height: 24px;
   padding-left: 20px;
+  padding-bottom: 20px;
   margin: 0;
+  font-family: "Arial","Tahoma",sans-serif;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 56px;
@@ -50,9 +53,45 @@
 }
 
 .programs-card__link {
-  font-size: 16px;
-  font-weight: 700;
+  position: relative;
+  text-decoration: none;
   text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programs-card__link::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  background: url("../../img/icon-right-arrow-long.svg") no-repeat center;
+  transform: translateY(-50%);
+  top: 75%;
+  right: -30px;
+}
+
+.programs-card__link:hover:after {
+  width: 34px;
+  height: 12px;
+  right: -40px;
+
+  background: url("../../img/icon-right-arrow-verylong.svg") no-repeat center;
+}
+
+.programs-card__link:active:after {
+  opacity: 0.3;
 }
 
 .programs-card__icon {

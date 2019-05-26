@@ -31,6 +31,7 @@
 .example__description {
   margin: 0;
   padding: 30px 20px 23px 20px;
+  font-family: "Arial","Tahoma",sans-serif;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -79,35 +80,6 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     padding-left: 110px;
-  }
-}
-
-.example__cost {
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    width: 180px;
-    text-align: right;
-    font-size: 20px;
-    line-height: 30px;
-    margin: auto 0;
-
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    text-align: left;
-    margin-top: 30px;
-    display: inline;
-
-    & span {
-      padding-right: 50px;
-    }
   }
 }
 

@@ -5,17 +5,6 @@
   background-color: $gray;
 }
 
-.social {
-  border-bottom: 1px solid #cdcdcd;
-  border-top: 1px solid #cdcdcd;
-  padding: 20px 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    border: none;
-  }
-}
-
 .footer__logo {
   display: block;
   margin: 0 auto;

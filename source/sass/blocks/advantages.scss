@@ -26,6 +26,7 @@
   margin-bottom: 20px;
   display: flex;
   position: relative;
+  font-family: "Arial","Tahoma",sans-serif;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -108,20 +109,27 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .advantages__item--benefit::after {
+
+.advantages__item--benefit::after {
+  @media (min-width: $tablet-width) {
     content: "1";
   }
+}
 
-  .advantages__item--usability::after {
-    content: "2";
+.advantages__item--usability::after {
+  @media (min-width: $tablet-width) {
+  content: "2";
   }
+}
 
-  .advantages__item--economy::after {
-    content: "3";
+.advantages__item--economy::after {
+  @media (min-width: $tablet-width) {
+  content: "3";
   }
+}
 
-  .advantages__item--result::after {
+.advantages__item--result::after {
+  @media (min-width: $tablet-width) {
     content: "4";
   }
 }

@@ -5,6 +5,10 @@
   user-select: none;
   cursor: pointer;
   display: block;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__label::before {
@@ -18,9 +22,21 @@
   height: 30px;
   border: 1px solid $gray;
 
-  &:hover {
-    border: 1px solid $dark-gray;
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -12px;
+    left: -65px;
   }
+}
+
+.checkbox__label:hover:before {
+  border: solid 1px $gray-hvr;;
+}
+
+.checkbox__label:active:before {
+  border: solid 1px $gray-hvr;;
+  opacity: 0.3;
 }
 
 .checkbox__input:checked + .checkbox__label::before {
@@ -35,4 +51,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -12px;
+    left: -65px;
+  }
 }
