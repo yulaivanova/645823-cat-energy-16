@@ -16,7 +16,12 @@
   margin-bottom: 20px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
     width: calc(50% - 40px);
     box-sizing: border-box;
   }

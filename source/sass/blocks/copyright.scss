@@ -1,8 +1,12 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 12px 0;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__link {
@@ -11,6 +15,7 @@
   display: inline-block;
   font-family: "Arial", "Tahoma", sans-serif;
   color: $dark-gray;
+  color: #444444;
 
   &:hover {
     color: $green;

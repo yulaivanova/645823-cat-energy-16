@@ -2,15 +2,25 @@
   background-color: $gray;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 30px 20px 20px;
+  padding: 26px 17px 20px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 375px 58px 52px;
+    padding: 0;
+  }
+}
+
+.programs-card:last-child {
+  @media (min-width: $tablet-width) {
+    & .programs-card__description {
+      padding-right: 315px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 35px 58px;
+    & .programs-card__description {
+    padding-right: 25px;
+    }
   }
 }
 
@@ -23,32 +33,42 @@
   padding-top: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 84px;
     padding-bottom: 28px;
+    padding-left: 53px;
+    font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 162px;
-    margin-bottom: 70px;
+    padding: 83px 0 0 214px;
     font-size: 36px;
   }
 }
 
 .programs-card__description {
   line-height: 24px;
-  padding-left: 20px;
   padding-bottom: 20px;
+  padding-top: 23px;
   margin: 0;
   font-family: "Arial","Tahoma",sans-serif;
   border-bottom: 1px solid #d9d9d9;
+  line-height: 1.29;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 56px;
+    padding-top: 6px;
+    padding-left: 53px;
+    padding-right: 285px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444444;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 84px 52px 35px 52px;
   }
 }
 
@@ -58,9 +78,15 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 20px;
   padding-top: 20px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-top: 0;
+    padding-left: 53px;
+    padding-bottom: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
@@ -79,7 +105,12 @@
   background: url("../../img/icon-right-arrow-long.svg") no-repeat center;
   transform: translateY(-50%);
   top: 75%;
-  right: -30px;
+  right: -35px;
+
+  @media (min-width: $tablet-width) {
+    right: -48px;
+    top: 12px;
+  }
 }
 
 .programs-card__link:hover:after {
@@ -88,6 +119,10 @@
   right: -40px;
 
   background: url("../../img/icon-right-arrow-verylong.svg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    right: -58px;
+  }
 }
 
 .programs-card__link:active:after {
@@ -103,17 +138,18 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 100px;
-    top: 17%;
+    right: 65px;
+    top: 88px;
     width: 200px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
     right: inherit;
-    top: 39px;
+    top: 45px;
     width: 100px;
     height: 100px;
+    left: 50px;
   }
 }
 
@@ -128,11 +164,13 @@
   @media (min-width: $tablet-width) {
     width: 69%;
     height: 100%;
-    left: 48px;
+    left: 30px;
+    bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     left: 15px;
+    bottom: 5px;
   }
 }
 
@@ -141,9 +179,10 @@
   bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 130%;
+    width: 135%;
     height: 100%;
     left: -35px;
+    top: 4px;
   }
 
   @media (min-width: $desktop-width) {
