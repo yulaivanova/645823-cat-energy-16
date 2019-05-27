@@ -2,19 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border-bottom: 1px solid $gray;
-  border-top: 1px solid $gray;
-  padding: 20px 0;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+  border-top: 1px solid rgba(205, 205, 205, 0.5);
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 40px;
+    padding: 23px 37px;
     flex-direction: row;
+    border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 13px 0;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+    align-items: center;
   }
 }
 
@@ -23,23 +27,40 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  padding: 10px 0;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    width: 70%;
+    width: 50%;
+    font-size: 20px;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 36%;
+    width: 35%;
+    padding: 0;
   }
 }
 
 .add-card__detail {
   width: 100%;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 14px;
+
+  font-family: "Arial", "Tahoma", sans-serif;
+  border-spacing: 0;
 
   @media (min-width: $tablet-width) {
-    width: 30%;
+    width: 50%;
+    align-self: self-end;
+    font-size: 16px;
+    padding-bottom: 21px;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: stretch;
+    width: 36%;
+    padding: 15px 31px 0 0;
   }
 }
 
@@ -47,8 +68,15 @@
   width: 100%;
   padding: 10px 0;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 12px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 27%;
+    padding-top: 11px;
+    padding-bottom: 12px;
   }
 }
 

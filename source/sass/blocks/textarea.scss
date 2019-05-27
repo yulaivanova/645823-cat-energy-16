@@ -1,12 +1,17 @@
 .textarea {
-  width: calc(100% - 30px);
-  border: 1px solid $gray;
+  width: calc(100% - 15px);
+  border: 1px solid;
+  border-color: rgba(205, 205, 205, 0.5);
   padding: 14px;
-  height: 150px;
+  min-height: 120px;
   text-transform: uppercase;
   font-size: 16px;
+  padding-right: 0;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 110px);
+    width: calc(100% - 90px);
+    font-size: 20px;
+    min-height: 140px;
+    padding-left: 17px;
   }
 }

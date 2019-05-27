@@ -1,7 +1,7 @@
 .slider {
   overflow-y: hidden;
   width: 320px;
-  margin: 35px auto 0 auto;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     width: calc(50% + 80px);
     position: absolute;
-    top: -190px;
+    top: -180px;
     left: calc(50% - 80px);
     margin-top: 0;
 
@@ -28,21 +28,24 @@
   position: relative;
   min-height: 300px;
   width: 50%;
-  overflow: hidden;
+
 
   &:nth-child(2) .slider__img {
     right: calc(100% - 160px);
     left: auto;
     top: 0;
+    z-index: -2;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 631px;
+    overflow: hidden;
     background-image: linear-gradient(to bottom, $white 169px, $gray 169px);
 
     &:nth-child(2) {
       background-image: linear-gradient(to bottom, $white 169px, $gray-light 169px);
-
+      z-index: 1;
+      
       .slider__img {
         right: calc(100% - 352px);
       }
@@ -53,7 +56,7 @@
     min-height: 671px;
 
     &:nth-child(1) {
-      background-image: linear-gradient(to bottom, $white 190px, $gray 190px);
+      background-image: linear-gradient(to bottom, $white 180px, $gray 180px);
 
       .slider__img {
         left: calc(100% - 365px);
@@ -61,7 +64,7 @@
     }
 
     &:nth-child(2) {
-      background-image: linear-gradient(to bottom, $white 190px, $gray-light 190px);
+      background-image: linear-gradient(to bottom, $white 180px, $gray-light 180px);
 
       .slider__img {
         right: calc(100% - 325px);
@@ -89,7 +92,7 @@
   justify-content: space-between;
   align-items: center;
   width: 198px;
-  margin: -31px auto 0 auto;
+  margin: -31px auto 15px;
   padding-left: 5px;
   position: relative;
   z-index: 1;
@@ -101,9 +104,11 @@
     bottom: 67px;
     left: 50%;
     transform: translateX(-50%);
+    padding-left: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    bottom: 90px;
     padding-left: 10px;
   }
 }

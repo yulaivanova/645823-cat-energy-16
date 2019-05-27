@@ -1,37 +1,55 @@
 .header {
   background-color: $white;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-right: 32px;
+    padding-top: 24px;
+    border: none;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 109px;
+    padding-top: 53px;
+  }
+}
+
+.header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .header__logo-image {
   padding-left: 20px;
-}
-
-.header__wrapper {
-  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
+    padding-left: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 110px;
+    padding-left: 109px;
   }
 }
 
 .header__logo img {
   @media (min-width: $tablet-width) {
     display: block;
-    width: 200px;
-    height: 70px;
+    width: 174px;
+    height: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 220px;
-    height: 80px;
+    width: 203px;
+    height: 60px;
   }
 }

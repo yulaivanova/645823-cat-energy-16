@@ -5,25 +5,15 @@
   background-color: $gray;
 }
 
-.social {
-  border-bottom: 1px solid #cdcdcd;
-  border-top: 1px solid #cdcdcd;
-  padding: 20px 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    border: none;
-  }
-}
-
 .footer__logo {
   display: block;
   margin: 0 auto;
   max-width: 135px;
-  padding: 35px 0 30px;
+  padding: 40px 0 28px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
   }
 
   &:hover {
@@ -42,5 +32,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding: 45px 30px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 110px;
   }
 }

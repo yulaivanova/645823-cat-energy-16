@@ -1,13 +1,13 @@
 .catalog {
-  padding-left: 20px;
-  padding-right: 20px;
-
   @media (min-width: $tablet-width) {
     padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 100px;
+    padding: 0 110px;
+    margin-bottom: 45px;
   }
 }
 
@@ -25,18 +25,24 @@
 
 .catalog__title {
   font-size: 36px;
+  font-weight: 400;
   border-bottom: 1px solid $gray;
   border-top: 1px solid $gray;
-  padding-bottom: 20px;
+  padding: 18px 20px 26px 20px;
   line-height: 60px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     border: none;
+    font-size: 60px;
+    padding-left: 0;
+    padding-top: 45px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+    padding-top: 62px;
   }
 }
 
@@ -51,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(25% - 40px);
+    width: calc(25% - 60px);
   }
 }
 
