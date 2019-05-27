@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   padding: 27px 20px;
+  background-color: $gray;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
@@ -31,6 +32,10 @@
     left: 110px;
     z-index: 2;
   }
+}
+
+.contacts__wrapper--index {
+  background-color: $white;
 }
 
 .contacts__title {

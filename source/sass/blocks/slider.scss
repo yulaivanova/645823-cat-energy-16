@@ -35,7 +35,6 @@
     left: auto;
     top: 0;
     z-index: -2;
-
   }
 
   @media (min-width: $tablet-width) {
@@ -46,6 +45,7 @@
     &:nth-child(2) {
       background-image: linear-gradient(to bottom, $white 169px, $gray-light 169px);
       z-index: 1;
+      
       .slider__img {
         right: calc(100% - 352px);
       }

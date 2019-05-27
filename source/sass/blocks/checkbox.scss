@@ -9,6 +9,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+  font-size: 20px;
+  }
 }
 
 .checkbox__label::before {
@@ -20,22 +24,22 @@
 
   width: 30px;
   height: 30px;
-  border: 1px solid $gray;
+  border: 1px solid $gray-hvr-input;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
     top: -12px;
-    left: -65px;
+    left: -60px;
   }
 }
 
 .checkbox__label:hover:before {
-  border: solid 1px $gray-hvr;;
+  border: solid 1px $gray-hvr;
 }
 
 .checkbox__label:active:before {
-  border: solid 1px $gray-hvr;;
+  border: solid 1px $gray-hvr;
   opacity: 0.3;
 }
 
@@ -46,7 +50,7 @@
   height: 30px;
   left: -45px;
   top: -5px;
-  border: 1px solid $gray;
+  border: 1px solid $gray-hvr-input;
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -56,6 +60,6 @@
     width: 40px;
     height: 40px;
     top: -12px;
-    left: -65px;
+    left: -60px;
   }
 }

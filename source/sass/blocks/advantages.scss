@@ -42,7 +42,7 @@
   margin-bottom: 20px;
   display: flex;
   position: relative;
-  font-family: "Arial","Tahoma",sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -146,7 +146,7 @@
     z-index: -1;
     font-size: 281px;
     font-weight: 400;
-    font-family: "Oswald";
+    font-family: "Oswald", "Arial", sans-serif;;
   }
 }
 
@@ -159,13 +159,13 @@
 
 .advantages__item--usability::after {
   @media (min-width: $tablet-width) {
-  content: "2";
+    content: "2";
   }
 }
 
 .advantages__item--economy::after {
   @media (min-width: $tablet-width) {
-  content: "3";
+    content: "3";
   }
 }
 

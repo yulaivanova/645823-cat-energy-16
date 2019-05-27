@@ -5,6 +5,10 @@
   display: block;
   user-select: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .radio__label::before {
@@ -52,5 +56,6 @@
     height: 40px;
     top: -12px;
     left: -65px;
+    background: radial-gradient(circle, $green 8px, $white 0);
   }
 }

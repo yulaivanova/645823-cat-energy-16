@@ -2,12 +2,14 @@
   background-color: $white;
   padding-top: 11px;
   padding-bottom: 12px;
+  border-bottom: 1px solid $gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-right: 32px;
     padding-top: 24px;
+    border: none;
     padding-bottom: 12px;
   }
 
