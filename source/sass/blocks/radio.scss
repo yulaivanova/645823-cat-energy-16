@@ -21,7 +21,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid $gray-border;
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -33,11 +33,11 @@
 }
 
 .radio__label:hover:before {
-  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .radio__label:active:before {
-  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
   border: solid 2px $green;
 }
 

@@ -14,8 +14,8 @@ ymaps.ready(function () {
     myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
         balloonContent: 'Cat energy'
     }, {
-       // Опции.
-       // Необходимо указать данный тип макета.
+      // Опции.
+      // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
       // Своё изображение иконки метки.
       iconImageHref: '../img/map-pin.png',

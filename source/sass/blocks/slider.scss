@@ -22,6 +22,10 @@
 .slider__wrapper {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 76px;
+  }
 }
 
 .slider__img-wrapper {
@@ -45,7 +49,7 @@
     &:nth-child(2) {
       background-image: linear-gradient(to bottom, $white 169px, $gray-light 169px);
       z-index: 1;
-      
+
       .slider__img {
         right: calc(100% - 352px);
       }
@@ -108,8 +112,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 90px;
-    padding-left: 10px;
+    bottom: 93px;
+    padding-left: 81px;
   }
 }
 
@@ -163,6 +167,11 @@
       border: 2px solid $green;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -20px;
+    top: -14px;
   }
 }
 
