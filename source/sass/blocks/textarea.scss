@@ -9,9 +9,15 @@
   padding-right: 0;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 90px);
+    width: calc(100% - 96px);
     font-size: 20px;
-    min-height: 140px;
+    min-height: 138px;
     padding-left: 17px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+    width: calc(100% - 100px);
   }
 }

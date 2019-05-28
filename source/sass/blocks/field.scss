@@ -4,7 +4,7 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,10 +59,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-left: 20px;
+    padding-left: 15px;
   }
 }
 
 .field__icon {
   position: absolute;
-  right: 15px;
+  right: 21px;
+  top: 20px;
 }

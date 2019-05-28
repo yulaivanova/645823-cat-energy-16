@@ -7,7 +7,7 @@
   padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 37px;
+    padding: 23px 37px 25px 37px;
     flex-direction: row;
     border: 1px solid rgba(205, 205, 205, 0.5);
   }
@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 35%;
+    width: 32%;
     padding: 0;
   }
 }
@@ -59,8 +59,8 @@
 
   @media (min-width: $desktop-width) {
     align-self: stretch;
-    width: 36%;
-    padding: 15px 31px 0 0;
+    width: 32%;
+    padding: 15px 27px 0 26px;
   }
 }
 

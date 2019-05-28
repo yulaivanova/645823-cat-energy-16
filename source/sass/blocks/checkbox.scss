@@ -27,8 +27,8 @@
   border: 1px solid $gray-hvr-input;
 
   @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
     top: -12px;
     left: -60px;
   }
@@ -41,6 +41,10 @@
 .checkbox__label:active:before {
   border: solid 1px $gray-hvr;
   opacity: 0.3;
+}
+
+.checkbox__label:focus:before {
+  outline: solid 1px $gray-hvr;
 }
 
 .checkbox__input:checked + .checkbox__label::before {
@@ -57,8 +61,8 @@
   background-size: 22px;
 
   @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
     top: -12px;
     left: -60px;
   }

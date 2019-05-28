@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 110px;
+    padding: 0 40px;
     margin-bottom: 0;
   }
 }
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 110px 31px;
+    padding: 62px 40px 31px;
   }
 }
 
@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 40px;
     max-width: 350px;
   }
 }
@@ -96,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 80px 110px;
+    padding: 0 40px 80px 40px;
     justify-content: space-between;
   }
 }
@@ -155,8 +155,8 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 62px;
-    margin-left: 28px;
+    padding: 0 55px;
+    margin-left: 33px;
     margin-bottom: 35px;
   }
 }
@@ -171,13 +171,14 @@
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 113px);
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     margin-left: 100px;
   }
 
   @media (min-width: $desktop-width) {
     width: calc(25% - 80px);
     margin-bottom: 20px;
+    margin-left: 99px;
   }
 }
 
@@ -227,7 +228,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 70px;
+    padding: 0;
   }
 }
 
@@ -239,15 +240,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 70px;
+    padding: 0;
   }
 }
 
 .form__contacts {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 1px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: calc(50% - 40px);
+    width: calc(50% - 38px);
   }
 }
 
@@ -261,7 +266,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 70px;
+    padding: 0;
   }
 }
 
@@ -311,6 +316,7 @@
   @media (min-width: $desktop-width) {
     left: -70px;
     width: calc(100% + 140px);
+    top: 61%;
   }
 }
 

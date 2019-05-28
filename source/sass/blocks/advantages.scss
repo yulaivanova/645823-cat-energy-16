@@ -156,9 +156,6 @@
 .advantages__item--benefit::after {
   @media (min-width: $tablet-width) {
     content: "1";
-  }
-
-  @media (min-width: $desktop-width) {
     left: 120px;
   }
 }
@@ -166,12 +163,18 @@
 .advantages__item--usability::after {
   @media (min-width: $tablet-width) {
     content: "2";
+    left: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 130px;
   }
 }
 
 .advantages__item--economy::after {
   @media (min-width: $tablet-width) {
     content: "3";
+    left: 110px;
   }
 
   @media (min-width: $desktop-width) {
@@ -182,6 +185,7 @@
 .advantages__item--result::after {
   @media (min-width: $tablet-width) {
     content: "4";
+    left: 141px;
   }
 
   @media (min-width: $desktop-width) {

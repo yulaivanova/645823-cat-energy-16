@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 }
 
@@ -58,6 +58,10 @@
 
   @media (min-width: $desktop-width) {
     width: calc(25% - 60px);
+
+    &:not(:nth-child(4n-3)) {
+      margin-left: 80px;
+    }
   }
 }
 

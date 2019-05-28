@@ -148,14 +148,14 @@
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    top: -12px;
+    top: -15px;
     left: auto;
-    margin-right: -16px;
+    margin-right: -20px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     border: 1px solid $gray-border;
-    background: radial-gradient(circle, $green 6px, $white 0);
+    background: radial-gradient(circle, $green 4px, $white 0);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
 
