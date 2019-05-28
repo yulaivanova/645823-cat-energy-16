@@ -14,7 +14,7 @@
 
 .advantages__title {
   font-size: 36px;
-  margin-top: 36px;
+  margin-top: 43px;
   margin-bottom: 50px;
   font-weight: 400;
 
@@ -97,7 +97,8 @@
   background-repeat: no-repeat;
   display: block;
   margin-right: 20px;
-
+  background-size: 55px;
+  
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
     width: 80px;
