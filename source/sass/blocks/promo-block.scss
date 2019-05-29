@@ -79,7 +79,7 @@
   line-height: 36px;
   text-align: center;
   font-weight: 400;
-  margin: 0;
+  margin: 0 auto;
   padding: 29px 15px 10px;
   width: 250px;
 
@@ -90,6 +90,7 @@
     padding-left: 0;
     padding-top: 45px;
     padding-bottom: 31px;
+    margin: 0;
     text-align: left;
     color: $black;
   }

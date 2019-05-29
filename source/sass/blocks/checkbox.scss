@@ -34,17 +34,17 @@
   }
 }
 
-.checkbox__label:hover:before {
+.checkbox__label:hover::before {
   border: solid 1px $gray-hvr;
 }
 
-.checkbox__label:active:before {
+.checkbox__label:active::before {
   border: solid 1px $gray-hvr;
   opacity: 0.3;
 }
 
-.checkbox__label:focus:before {
-  outline: solid 1px $gray-hvr;
+.checkbox__input:focus + label::before {
+  outline: solid 2px $gray-hvr;
 }
 
 .checkbox__input:checked + .checkbox__label::before {

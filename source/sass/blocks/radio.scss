@@ -39,11 +39,11 @@
 .radio__label:active::before {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
   border: solid 2px $green;
+  outline: none;
 }
 
-.radio__label:focus::before {
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
-  border: solid 2px $green;
+.radio__input:focus + label::before {
+  outline: solid 2px $green;
 }
 
 .radio__input:checked + .radio__label::before {

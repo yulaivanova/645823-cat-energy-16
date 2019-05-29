@@ -12,6 +12,10 @@
     z-index: 1;
     padding-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+  }
 }
 
 .product-card::before {

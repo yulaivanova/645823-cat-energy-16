@@ -116,7 +116,7 @@
   }
 }
 
-.programs-card__link:hover:after {
+.programs-card__link:hover::after {
   width: 34px;
   height: 12px;
   right: -40px;
@@ -128,7 +128,7 @@
   }
 }
 
-.programs-card__link:active:after {
+.programs-card__link:active::after {
   opacity: 0.3;
 }
 

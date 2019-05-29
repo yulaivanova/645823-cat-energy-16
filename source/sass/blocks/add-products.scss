@@ -2,7 +2,7 @@
   margin-bottom: 15px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
 
@@ -45,7 +45,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 40px;
+    padding-left: 0;
+    margin-bottom: 81px;
   }
 }
 
@@ -55,8 +56,12 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    padding-left: 39px;
     padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
   }
 }
 
@@ -72,6 +77,12 @@
   @media (min-width: $tablet-width) {
     left: -20px;
     top: 60%;
+    width: calc(100% + 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -70px;
+    width: calc(100% + 70px);
   }
 }
 
@@ -85,6 +96,7 @@
   @media (min-width: $desktop-width) {
     width: calc(100% - 40px);
     margin-right: 40px;
+    margin-bottom: 78px;
   }
 }
 
@@ -117,7 +129,7 @@
     justify-content: space-between;
     padding: 65px 110px 69px 91px;
     align-items: flex-start;
-    margin-bottom: 75px;
+    margin-bottom: 73px;
 
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");
@@ -136,7 +148,7 @@
     margin-left: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 44px;
     height: 289px;
 
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {

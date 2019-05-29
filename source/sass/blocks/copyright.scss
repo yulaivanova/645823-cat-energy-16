@@ -35,10 +35,31 @@
 
   &:hover {
     fill: $green;
-    color: $green;
   }
 
   &:active {
+    fill: $green;
+    opacity: 0.3;
+  }
+}
+
+.copyright:hover {
+  & .copyright__link {
+    color: $green;
+  }
+
+  & .copyright__logo .copyriht__icon {
+    fill: $green;
+  }
+}
+
+.copyright:active {
+  & .copyright__link {
+    color: $green;
+    opacity: 0.3;
+  }
+
+  & .copyright__logo .copyriht__icon {
     fill: $green;
     opacity: 0.3;
   }
