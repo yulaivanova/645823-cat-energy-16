@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 13px 0;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -12,56 +12,47 @@
 .copyright__link {
   font-size: 16px;
   text-decoration: none;
-  display: inline-block;
+
   font-family: "Arial", "Tahoma", sans-serif;
   color: #444444;
   line-height: normal;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 
-  &:hover {
-    color: $green;
+  & span {
+    @media (min-width: $tablet-width) {
+      margin-right: 15px;
+    }
   }
 
   &:active {
-    color: $green;
     opacity: 0.3;
+
+    & .copyriht__icon {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
+
+  &:hover {
+    & .copyriht__icon {
+      fill: $green;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 15px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
 .copyriht__icon {
   fill: $dark-gray;
-
-  &:hover {
-    fill: $green;
-  }
-
-  &:active {
-    fill: $green;
-    opacity: 0.3;
-  }
-}
-
-.copyright:hover {
-  & .copyright__link {
-    color: $green;
-  }
-
-  & .copyright__logo .copyriht__icon {
-    fill: $green;
-  }
-}
-
-.copyright:active {
-  & .copyright__link {
-    color: $green;
-    opacity: 0.3;
-  }
-
-  & .copyright__logo .copyriht__icon {
-    fill: $green;
-    opacity: 0.3;
-  }
 }
