@@ -66,6 +66,10 @@
 
 .field__icon {
   position: absolute;
-  right: 21px;
-  top: 20px;
+  right: 13px;
+  top: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+  }
 }

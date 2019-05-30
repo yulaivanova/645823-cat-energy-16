@@ -1,6 +1,6 @@
 .form {
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -9,7 +9,10 @@
 }
 
 .form__pet {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -60,6 +63,8 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px;
     padding-top: 3px;
+    margin-top: 72px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,6 +81,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,11 +94,11 @@
 }
 
 .form__container {
-  padding: 9px 18px 12px 18px;
+  padding: 19px 18px 12px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 9px 20px 12px 20px;
+    padding: 16px 17px 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,13 +110,14 @@
 .form__button {
   width: 100%;
   border: none;
-  padding: 10px 15px;
+  padding: 11px 15px;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 80px);
     font-size: 20px;
     margin-left: 50px;
-    padding: 16px 22px;
+    padding: 17px 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,7 +164,7 @@
   @media (min-width: $tablet-width) {
     padding: 0 55px;
     margin-left: 33px;
-    margin-bottom: 35px;
+    margin-bottom: 23px;
   }
 }
 
@@ -167,12 +174,12 @@
 
 .form__checkbox {
   margin-left: 45px;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 113px);
-    margin-bottom: 53px;
     margin-left: 100px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -191,8 +198,8 @@
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 0;
-    padding-top: 29px;
-    padding-bottom: 16px;
+    padding-top: 21px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -258,7 +265,7 @@
 
 .form__fieldset--add-info {
   border: 0;
-  padding: 10px 20px;
+  padding: 5px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -276,12 +283,12 @@
   line-height: 24px;
   margin: 0;
   position: relative;
-  margin-bottom: 34px;
-  line-height: 1.1;
+  margin-bottom: 35px;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
-    margin-top: 54px;
-    margin-bottom: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 36px;
   }
 }
@@ -312,6 +319,7 @@
   @media (min-width: $tablet-width) {
     left: -30px;
     width: calc(100% + 60px);
+    top: 60%;
   }
 
   @media (min-width: $desktop-width) {
@@ -319,6 +327,10 @@
     width: calc(100% + 70px);
     top: 61%;
   }
+}
+
+.form__legend--width::before {
+  top: 58%;
 }
 
 .form__legend span {
@@ -333,7 +345,7 @@
 }
 
 .form__required-text {
-  margin: 20px 0;
+  margin: 20px 0 22px 0;
   text-align: center;
   font-family: "Arial", "Tahoma", sans-serif;
 
