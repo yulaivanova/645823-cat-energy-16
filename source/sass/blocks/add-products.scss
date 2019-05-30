@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
-  margin-top: 28px;
+  margin-top: 29px;
   margin-bottom: 34px;
   padding: 0 20px;
 
@@ -70,7 +70,7 @@
   height: 3px;
   position: absolute;
   background-color: $green;
-  width: calc(100% + 40px);
+  width: calc(100% - 20px);
   top: 55%;
   z-index: -1;
 
@@ -87,7 +87,7 @@
 }
 
 .add-products__list {
-  margin-bottom: 37px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
