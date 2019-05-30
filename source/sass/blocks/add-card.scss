@@ -4,10 +4,10 @@
   flex-direction: column;
   border-bottom: 1px solid rgba(205, 205, 205, 0.5);
   border-top: 1px solid rgba(205, 205, 205, 0.5);
-  padding-bottom: 18px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 37px 25px 37px;
+    padding: 23px 37px 25px;
     flex-direction: row;
     border: 1px solid rgba(205, 205, 205, 0.5);
   }
@@ -15,7 +15,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 14px 0 15px 0;
+    padding: 14px 0 13px;
     border-left: none;
     border-right: none;
     align-items: center;
@@ -28,11 +28,13 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 10px;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     width: 50%;
     font-size: 20px;
-    padding-top: 3px;
+    padding-top: 0;
+    line-height: normal;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,11 +45,13 @@
 
 .add-card__detail {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 14px;
 
   font-family: "Arial", "Tahoma", sans-serif;
   border-spacing: 0;
+  line-height: 1;
+
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -60,16 +64,17 @@
   @media (min-width: $desktop-width) {
     align-self: stretch;
     width: 32%;
-    padding: 14px 0 0 0;
+    padding: 15px 3px 0 0;
   }
 }
 
 .add-card__link {
   width: 100%;
   padding: 10px 0;
+  line-height: 1.25;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
+    padding-top: 11px;
     padding-bottom: 12px;
   }
 

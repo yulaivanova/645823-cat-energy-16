@@ -87,10 +87,10 @@
 }
 
 .add-products__list {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 73px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +113,7 @@
 
   padding-top: 65px;
   padding-bottom: 41px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 
   @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
     background-image: url("../../img/gift-photo-mobile@2x.jpg");
@@ -129,7 +129,7 @@
     justify-content: space-between;
     padding: 65px 110px 69px 91px;
     align-items: flex-start;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
 
     @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");

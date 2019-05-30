@@ -1,6 +1,7 @@
 .info-table {
   font-family: "Arial", "Tahoma", sans-serif;
   border-spacing: 0;
+  line-height: 1.33;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 32px;

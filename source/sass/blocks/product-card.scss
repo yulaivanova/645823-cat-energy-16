@@ -1,7 +1,7 @@
 .product-card {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -10,7 +10,7 @@
     background: $white;
     position: relative;
     z-index: 1;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,9 +60,10 @@
 
 .product-card__btn {
   width: calc(100% - 40px);
-  padding-top: 12px;
-  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 10px;
   margin: 0 auto;
+  line-height: 1.25;
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 75px);

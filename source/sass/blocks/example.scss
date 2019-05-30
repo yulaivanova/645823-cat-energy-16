@@ -1,6 +1,6 @@
 .example {
   background-color: $gray;
-  padding: 19px 0;
+  padding: 17px 0 20px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -38,8 +38,9 @@
 
 .example__description {
   margin: 0;
-  padding: 23px 25px 23px 20px;
+  padding: 23px 25px 25px 20px;
   font-family: "Arial", "Tahoma", sans-serif;
+  line-height: 1.29;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -82,7 +83,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 82px;
+    margin-bottom: 80px;
     margin-top: 30px;
     padding-left: 30px;
     padding-right: 33px;

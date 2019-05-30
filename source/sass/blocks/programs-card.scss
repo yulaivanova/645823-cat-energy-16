@@ -30,17 +30,19 @@
   padding-left: 20px;
   font-weight: 400;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 8px;
+  line-height: 1.54;
 
   @media (min-width: $tablet-width) {
-    padding-top: 88px;
-    padding-bottom: 28px;
+    padding-top: 77px;
+    padding-bottom: 18px;
     padding-left: 53px;
     font-size: 36px;
+    line-height: 1.03;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 83px 0 0 214px;
+    padding: 76px 0 0 214px;
     font-size: 36px;
   }
 }
@@ -67,7 +69,7 @@
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 84px 52px 35px 52px;
+    padding: 72px 52px 33px;
   }
 }
 
@@ -77,8 +79,9 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
-  padding-top: 20px;
+  padding-top: 22px;
   color: $black;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -103,7 +106,7 @@
   height: 12px;
   background: url("../../img/icon-right-arrow-long.svg") no-repeat center;
   transform: translateY(-50%);
-  top: 75%;
+  top: 80%;
   right: -35px;
 
   @media (min-width: $tablet-width) {

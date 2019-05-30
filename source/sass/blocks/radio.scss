@@ -5,6 +5,7 @@
   display: block;
   user-select: none;
   cursor: pointer;
+  line-height: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

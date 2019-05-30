@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     width: calc(50% + 80px);
     position: absolute;
-    top: -180px;
+    top: -186px;
     left: calc(50% - 80px);
     margin-top: 0;
 
@@ -58,9 +58,10 @@
 
   @media (min-width: $desktop-width) {
     min-height: 671px;
+    margin-bottom: 6px;
 
     &:nth-child(1) {
-      background-image: linear-gradient(to bottom, $white 180px, $gray 180px);
+      background-image: linear-gradient(to bottom, $white 186px, $gray 186px);
 
       .slider__img {
         left: calc(100% - 365px);
@@ -68,7 +69,7 @@
     }
 
     &:nth-child(2) {
-      background-image: linear-gradient(to bottom, $white 180px, $gray-light 180px);
+      background-image: linear-gradient(to bottom, $white 186px, $gray-light 186px);
 
       .slider__img {
         right: calc(100% - 325px);
