@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -70,7 +70,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 7px;
+    padding-top: 5px;
+    margin-bottom: 34px;
   }
 }
 
@@ -89,7 +90,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0;
-    padding-bottom: 52px;
+    padding-bottom: 50px;
   }
 }
 
@@ -102,7 +103,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 40px 80px 40px;
+    padding: 0 40px 84px 40px;
     justify-content: space-between;
   }
 }
@@ -206,7 +207,7 @@
     margin: 0;
     width: calc(50% - 40px);
     margin-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 24px;
   }
 }
 
@@ -269,7 +270,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    margin-top: 24px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -330,7 +331,11 @@
 }
 
 .form__legend--width::before {
-  top: 58%;
+  top: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 23px;
+  }
 }
 
 .form__legend span {
@@ -360,6 +365,7 @@
     width: calc(50% - 40px);
     margin: 0;
     text-align: left;
+    padding-top: 12px;
   }
 }
 

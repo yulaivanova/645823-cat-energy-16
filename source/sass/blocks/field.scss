@@ -60,7 +60,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-left: 20px;
-    padding-left: 15px;
+    padding-left: 12px 20px;
   }
 }
 
@@ -71,5 +71,9 @@
 
   @media (min-width: $tablet-width) {
     top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
   }
 }
