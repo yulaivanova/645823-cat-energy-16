@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
   }
 }
 
@@ -52,12 +52,13 @@
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 30px);
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     min-height: 432px;
   }
 
   @media (min-width: $desktop-width) {
     width: calc(25% - 60px);
+    margin-bottom: 30px;
 
     &:not(:nth-child(4n-3)) {
       margin-left: 80px;

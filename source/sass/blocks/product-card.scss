@@ -10,11 +10,11 @@
     background: $white;
     position: relative;
     z-index: 1;
-    padding-bottom: 37px;
+    padding-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 42px;
+    padding-bottom: 40px;
   }
 }
 
@@ -67,8 +67,8 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 75px);
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
